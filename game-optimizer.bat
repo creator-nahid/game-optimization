@@ -1,6 +1,6 @@
 @echo off
 :: =============================================================================
-::           Created by Nahid.
+::           Developed by Nahid.
 :: =============================================================================
 
 :check_admin
@@ -91,8 +91,12 @@ taskkill /f /im RiotClientServices.exe >nul 2>&1
 taskkill /f /im FortniteClient-Win64-Shipping.exe >nul 2>&1
 taskkill /f /im EpicGamesLauncher.exe >nul 2>&1
 taskkill /f /im OneDrive.exe >nul 2>&1
+taskkill /f /im "steam.exe" >nul 2>&1
+taskkill /f /im "steamservice.exe" >nul 2>&1
+taskkill /f /im "SearchHost.exe" >nul 2>&1
 taskkill /f /im YourPhone.exe >nul 2>&1
 taskkill /f /im "Cortana.exe" >nul 2>&1
+taskkill /f /im "qbittorrent.exe" >nul 2>&1
 taskkill /f /im "WinStore.App.exe" >nul 2>&1
 taskkill /f /im "spoolsv.exe" >nul 2>&1
 taskkill /f /im "CrossDeviceResume.exe" >nul 2>&1
