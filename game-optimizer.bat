@@ -1,6 +1,6 @@
 @echo off
 :: =============================================================================
-::           Developed by Nahid.
+::           Created by Nahid.
 :: =============================================================================
 
 :check_admin
@@ -94,8 +94,12 @@ taskkill /f /im OneDrive.exe >nul 2>&1
 taskkill /f /im "steam.exe" >nul 2>&1
 taskkill /f /im "steamservice.exe" >nul 2>&1
 taskkill /f /im "SearchHost.exe" >nul 2>&1
+taskkill /f /im "SearchIndexer.exe" >nul 2>&1
+taskkill /f /im "ShellHost.exe" >nul 2>&1
 taskkill /f /im YourPhone.exe >nul 2>&1
 taskkill /f /im "Cortana.exe" >nul 2>&1
+taskkill /f /im "RobloxPlayerBeta.exe" >nul 2>&1
+taskkill /f /im "RobloxCrashHandler.exe" >nul 2>&1
 taskkill /f /im "qbittorrent.exe" >nul 2>&1
 taskkill /f /im "WinStore.App.exe" >nul 2>&1
 taskkill /f /im "spoolsv.exe" >nul 2>&1
@@ -108,6 +112,12 @@ echo [ACTION] Optimizing System Drive (C:)...
 defrag C: /O
 cleanmgr /sagerun:1 >nul
 echo [SUCCESS] Disk Optimization completed.
+echo.
+
+echo [INFO] Starting hardware optimizer...
+echo [ACTION] Optimizing hardware (C:)...
+pnputil.exe /scan-devices
+echo [SUCCESS] Hardware Optimization completed.
 echo.
 
 :ending
