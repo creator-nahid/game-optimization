@@ -11,6 +11,7 @@ Windows 11<br>
 - Epic Games<br>
 - Riot Games<br>
 - Steam<br>
+- Rockstar Games<br>
 
 **How to Use**<br>
 Having trouble launching the program? Follow the steps!
